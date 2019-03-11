@@ -23,7 +23,6 @@ public class ServerStream implements Runnable {
             PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
             while (true) {
                 String line = br.readLine();
-                new String(line.getBytes(), "ISO-8859-1");
                 System.out.println("客户端" + number + "：发来的消息" + line);
                 pw.println(line.toUpperCase());
                 if (line.equalsIgnoreCase("bye")) {
