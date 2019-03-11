@@ -24,6 +24,7 @@ public class TCP_MY_Client {
             int len;
             while ((len = fis.read(buf)) != -1) {
                 os.write(buf, 0, len);
+                os.flush();
             }
             os.close();
             fis.close();

@@ -29,6 +29,7 @@ public class TCP_MY_Server {
             int len;
             while ((len = is.read(buf)) != -1) {
                 fos.write(buf, 0, len);
+                fos.flush();
             }
             fos.close();
             is.close();
