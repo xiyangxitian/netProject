@@ -2,6 +2,11 @@ package com.iotek.tcpsocket;
 
 import java.util.Scanner;
 
+/**
+ * 练习下，项目 这个项目完结了
+ * socket编程加url 其实应该把io也加上的
+ * 不过没必要因为要常练习才是
+ */
 public class TestLianXi {
 
     public static void main(String[] args) {
